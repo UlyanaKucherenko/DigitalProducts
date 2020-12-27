@@ -1,32 +1,41 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+
+   <the-header />
+    <the-about />
+    <the-services />
+    <the-works />
+    <our-team />
+    <the-contact />
+    
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: $test;
+import TheHeader from './components/TheHeader/TheHeader.vue'
+import TheAbout from './components/TheAbout/TheAbout.vue'
+import TheServices from './components/TheMain/TheServices.vue'
+import TheWorks from './components/TheMain/TheWorks.vue'
+import OurTeam from './components/TheMain/OurTeam.vue'
+import TheContact from './components/TheMain/TheContact.vue'
+export default {
+  name: 'App',
+  components: {
+      TheHeader,
+      TheAbout,
+      TheServices,
+      TheWorks,
+      OurTeam,
+      TheContact
     }
-  }
 }
+</script>
+
+<style lang="scss">
+  .app {
+    //min-height: 100vh;
+    //display: flex;
+  }
+
 </style>

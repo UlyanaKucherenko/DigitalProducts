@@ -1,0 +1,9 @@
+<template>
+    <svg width="56" height="60" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="909 4731 56 60"><svg width="33" height="7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="909 4784 33 7" x="909" y="4784"><image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAHCAYAAACGESREAAABQUlEQVQ4T43TS0okYRAE4K99vx+IuhBFF17B7Ww8hufzEq49gSgIboSZgRFdKL61ZyTkT6lRF50Q/NXVVRWRkZE9X2sCUxjHaMMIgqGGHoL8zpnq418Hf/HawQuecd+QZ9+rPpAzxMvYxAZWsIg5zGIak01cyCNqrJ0hfGqERf6AO9ziBte4xE+c41e73y/yJexiB+tNTJc47gRxZtCKMxEWVPcRdIU/OMYBTiIina5hDz+w2joPYTrNma6HB2X/9FzGUChBceUI+ziMiBCky+2GrY4bC03QDIKMI8JqHCUw8/1uHHGgxpGRxIXfbRxnOM2IKhMlPmFMFpKN+UacLFRYy5m8F2fKoYhItxlBMpEzIXxEslHjiAMRctEy8l8wuw7WJoQkqA3IdTfIeSf/VYW8qrYk93Jdm5NtyXUEf2zHGwuiWiQGeecCAAAAAElFTkSuQmCC" width="33" height="7" x="909" y="4784"/></svg><svg width="48" height="54" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0.414 0 47.171 54" fill="#9f9acf" x="917" y="4731"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="54" viewBox="1.882 4.998 46.118 52.794"><path paint-order="stroke fill markers" fill-rule="evenodd" d="M36.284 7.954c11.203 6.085 15.041 19.562 8.573 30.102-2.272 3.703-8.175 7.4-15.055 10.27-10.089 3.269-27.92 9.466-27.92 9.466V28.87s.553-9.832 2.406-12.85C10.756 5.48 25.08 1.869 36.284 7.954zM24.942 14.34c6.373 0 11.54 4.86 11.54 10.856 0 5.996-5.167 10.857-11.54 10.857-6.373 0-11.54-4.861-11.54-10.857 0-5.996 5.167-10.856 11.54-10.856z"/></svg></svg></svg>
+</template>
+
+<script>
+export default {
+    name: 'IconPin',
+}
+</script>

@@ -1,0 +1,11 @@
+<template>
+    <svg width="36" height="61" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="767 2352 36 61">
+        <image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAA9CAYAAADF2cvLAAAEIUlEQVRoQ+2aT2wUZRjGf890W5oSrWJIqsYIRsRQ/4SDhpPe1IMeN9Gou7NCpyJ/YiMkghSogCEaBF0xdNu6MyUcTDx48IAmxkTDRaIHE/TgnwpqrAcUtSLdduc1w782mjIzdasc5jtt9v2+53ve53vmm+R9R0wbqwqFOxypy9BtMmTCpscb+duBJsRpQt6rt+QODQ4O/hTh68ImXqG0FtkOoH36/40kMQNWlPQvQhv6g2r1LCGvWFwPepmINRxGvBHCKFLzXBESnFGdJWA9iDuBX008Kc91ezHywO0YL81rv6K3XC7X5orI33F78vnWP9ra9oBWS7wrr+h+AiwHHa7nnNVDQ0PH/ysyF/ZZ5borHGMIWBoRCiPPCPX2B9VdMHdGvkSi6i64r5l4KiJ07kkSPRXf3zfTou5C6TGTdRmMKxVpNQtOQbivPwg+nAnfK7jPI3oTE/KKpZ1gz83+OG1DJQj2NIzQypUrFzTVbBlOvV1SPQWxZoXh983t7Z+Xy+XxxIQk1vf7fjnFRg2d6hXcbYjtU0eGvgC+BObs7pkpA5PVZNYJunkaoYYmPGuwi4RkDEgWhHDVrNFmuVBmP4fSOqFHphN65tqbFu07duzYxffbLPFTL+vs7LQfRkb6hLYkfuxT75JyQep7KCV+6ukZoTjJMoUyheIUiItnHsoUilMgLp55KFMoToG4eOahTKE4BeLimYcyheIUiItnHsoUilMgLp55KFMoToG4+OXvIRPegO8PxGUyV/GuYmmTsBemSnrwUWgc/T+qsJJqYPcAd12+VVjgbWHvGM6V6Y4lrGHOmKAeOpaT2XxwWtJgRL0Qwx4G7ruokKGNp06P7e3o6MglBYv6ap7rLpVZIcS5HsITAv+6xYtHTp48mbgAPzo6OrmgrW2HoU1ThIynB4b9V5KSieZ1l0rLLLTdwP1ApMqfGG9h9S2VgwdPpMIqlvoM2/qvysLnu5HbgE+BI2APgm4QtqY/CKKGXOLR/Q9C2NpKEOxPjAB0FdxXJdYh+iq+v90ruEOIJzC2V4b9vjRYnuvuwtgsr1CcQMph7K4M+5vTdBQ9192I8SLwncHXgmVAq0xe/3D1zaSEXNdtnWcMGjyqrqL7geBuYMyx8KEDw8MfJwUqlUoLW0LbGwFdWGPYztbJyZfKhw79lhTHc908RgVsTF2Pl+6VY88CDwBHHaznQBAcSQzmec3OmTPLQ2khjvNjpVqN/JR4nG+dboWzLfOq8vl809Xz5y+RUTVYgXEc8ZkZ38rhdzvXy595mE1EQeG0GGFNODLZJa8OmSYN63DgFjt3zNcA7zc1Od7Ulw2ueytma0BrE6fXmInjYK8D+ytBEPlwakR91dzExNLQcW4ULJIpZ4SN//5DchRSM4dvVHdGxpvCr3zfPxUx+Qt5oIcdpTtl/AAAAABJRU5ErkJggg==" width="36" height="61" x="767" y="2352"/>
+    </svg>
+</template>
+
+<script>
+export default {
+    name: 'IconMobile',
+}
+</script>
