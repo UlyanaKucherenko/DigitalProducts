@@ -109,6 +109,12 @@ export default {
             font-family: ProximaNova;
             @include text(24px, 600, white); 
             text-transform: uppercase;
+
+            &:hover{
+            @include text(24px, 600, grey); 
+            transition: all 0.5s ease-out;
+            }
+        
         }
 
         &__bg {

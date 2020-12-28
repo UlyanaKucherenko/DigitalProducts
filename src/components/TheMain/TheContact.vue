@@ -18,7 +18,7 @@
                 <form action="" method="post" class="the-contact__form">
                     <input class="the-contact__input" type="text" name="name" placeholder="Your Name *" />
                     <input class="the-contact__input" type="email" name="email" placeholder="Your Email *" />
-                    <textarea class="the-contact__textarea" placeholder="Your Email *"></textarea>
+                    <textarea class="the-contact__textarea" placeholder="Your Message *"></textarea>
                     <button class="the-contact__form-btn" type="submit">SEND MESSAGE</button>
                 </form>
             </div>
@@ -93,6 +93,7 @@ export default {
             max-width:860px;
             width: 100%;
             @include flex(center, center, row, wrap);
+            font-family: 'PT Sans', sans-serif;
 
             @include media(879px) {
                 margin-right: 20px;
@@ -111,7 +112,14 @@ export default {
             @include flex(flex-start, center, row);
             border:none;
             overflow: hidden;
-            background-color: rgba(#EBEBEB,0.7);
+            background-color: rgba(#EBEBEB,0.5);
+            @include text(18px,400, #5c5959);
+            &::-webkit-input-placeholder { /* WebKit browsers */
+            @include text(18px,400, white);
+        }
+            
+            font-style: italic;
+  
             @include media(960px) {
                margin-right: 20px;
             }
@@ -128,11 +136,16 @@ export default {
         &__textarea {
             width: 100%;
             height: 200px;
-            background-color: rgba(#EBEBEB,0.7);
+            background-color: rgba(#EBEBEB,0.5);
             border:none;
             padding: 10px 15px 0 15px;
             overflow: hidden;
             margin-bottom: 50px;
+            @include text(18px,400,  #5c5959);
+            font-style: italic;
+            &::-webkit-input-placeholder { /* WebKit browsers */
+            @include text(18px,400, white);
+            }
         }
 
         &__form-btn {
@@ -142,6 +155,29 @@ export default {
             padding:  0 15;
             border-radius: 4px;
             background-color: #9f9acf;
+            border: none;
+            border-bottom: 4px solid rgba($color: #000000, $alpha: 0.3); 
+            outline:none;
+            @include flex(center, center, row);
+            cursor: pointer;
+
+            @include text(20px, 700, #FFFFFF); 
+            text-transform: uppercase;
+            font-family: ProximaNova;
+            letter-spacing: 0.4px;
+            text-align: center;
+            
+            &:hover {
+                background-color: rgba(#646161,0.8);
+                transition: all .3s ease-in;
+                border-bottom: none;
+            }
+
+            &:active {
+                background-color: rgba(#ffbe33,1);
+                transition: all .1s ease-in;
+                outline:none;
+            }
         }
     }
 
