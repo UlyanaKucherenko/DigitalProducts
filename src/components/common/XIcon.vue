@@ -25,6 +25,11 @@ export default {
         [getName('layer')]: () => import('../icons/IconLayer.vue'),
         [getName('pin')]: () => import('../icons/IconPin.vue'),
 
+        [getName('facebook')]: () => import('../icons/IconFacebook.vue'),
+        [getName('google')]: () => import('../icons/IconGoogle.vue'),
+        [getName('linkedin')]: () => import('../icons/IconLinkedin.vue'),
+        [getName('twitter')]: () => import('../icons/IconTwitter'),
+
     },
     computed: {
         getIcon() {

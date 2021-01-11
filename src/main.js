@@ -7,9 +7,13 @@ import Antd from 'ant-design-vue';
 import router from './router'
 import store from './store'
 
+
+
 Vue.config.productionTip = false
 
 Vue.use(Antd);
+var VueScrollTo = require('vue-scrollto');
+Vue.use(VueScrollTo);
 
 new Vue({
   router,

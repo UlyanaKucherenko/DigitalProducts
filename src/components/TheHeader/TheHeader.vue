@@ -2,13 +2,14 @@
     <div id="home" class="the-header">
 
         <div class="the-header__bg">
-            <div class="the-header__nav">
+            <div class="the-header__nav" :class="{ scrolling: scrollPosition > 0 }">
                 <div class="the-header__nav-container container">
                     <a class="the-header__logo" href="/">
                         <icon-logo />
                     </a>
-                    
-                        <ul class="the-header__list">
+
+                    <div class="the-header__wrapp-menu " >
+                        <ul class="the-header__list" :class="{show:isShow}">
                             <li class="the-header__list-item">
                                 <a href="#home" class="the-header__item-link">Home</a>
                             </li>
@@ -25,7 +26,15 @@
                                 <a href="#contact" class="the-header__item-link">Contact</a>
                             </li>
                         </ul>
-                    
+                        <div class="the-header__icon-close" @click="openMenu" :class="{show:isShow}">
+                            <a-icon type="close" style="font-size:54px" />
+                        </div>
+                        <div class="the-header__icon-menu" @click="openMenu">
+                            <a-icon type="menu" style="font-size:54px" />
+                        </div>
+                        
+                    </div>
+
                 </div>
             </div>
            
@@ -52,6 +61,29 @@ export default {
     components: {
         IconLogo,
     },
+    data() {
+         return {
+             isShow: false,
+             scrollPosition: 0,
+         }
+       
+    },
+    mounted() {
+    window.addEventListener("scroll", this.handleTopBar);
+  },
+    methods: {
+        handleClick() {
+            console.log('BTN clicked');
+            
+        },
+         handleTopBar() {
+            this.scrollPosition = window.scrollY;
+            },
+        openMenu() {
+            this.isShow = !this.isShow;
+
+        }
+    },
 
 
 }
@@ -74,6 +106,14 @@ export default {
         background: #9F9ACF url("../../assets/img/header-bg.png") no-repeat center;
         background-size: cover;
         }
+        .scrolling {
+            background: rgba(94, 85, 175, 0.5);
+            z-index: 2;
+            padding: 20px 0;
+            transition: 0.3s ease-in;
+            top: 0;
+            
+        }
 
         &__nav {
             min-height: 100px;
@@ -87,15 +127,58 @@ export default {
         &__nav-container {
             @include flex(space-between, center, row, wrap);
             min-height: 100px;
+            padding-top: 10px; 
+
+              @include media(800px) {
+                @include flex(space-between, flex-start, row, wrap);
+                 
+            }
         }
 
         &__logo {
             display: inline-block;
             cursor: pointer;
+            width: 54px;
         }
+
+        &__icon-menu {
+            display: none;
+             @include media(800px) {
+                display: block;
+            }
+        }
+
+        &__icon-close {
+            display: none;
+        }
+
+
+        &__wrapp-menu {
+            //width: 700px;
+            @include flex(center, flex-start, row, wrap);
+
+            @include media(800px) {
+               /* max-width: 200px;
+                width: 100%;*/
+                //display: none;
+                 
+            }
+        }
+
+        .show {
+                display: none;
+                 @include media(800px) {
+                 display: block;
+                }
+            }
 
         &__list {
             @include flex(center, center, row, wrap);
+
+             @include media(800px) {
+                //@include flex(center, center, column, wrap);
+                display: none;
+            }
         }
 
         &__list-item {
@@ -131,7 +214,7 @@ export default {
 
         &__title {
             font-family: ProximaNova;
-            @include text(72px, 700, white); 
+            @include text($title-size, 700, white); 
             text-transform: uppercase;
         }
 

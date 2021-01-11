@@ -9,6 +9,7 @@ html,
 body {
     font-size:100%;
     min-height: 100vh;
+    background-color: #EBEBEB;
 }
 
 .container {
@@ -19,7 +20,7 @@ body {
 
 }
 
-ul {
+ul,li,ol,p,h1,h2,h3 {
     list-style: none;
     margin-bottom: 0;
 }

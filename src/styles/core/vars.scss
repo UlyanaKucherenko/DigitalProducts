@@ -1,5 +1,12 @@
+//COLORS
 
-$test: #9f9acf;
+$N01: #9f9acf;
+
+$white: #ffffff;
+$black:#000000;
+
+
+
 
 
 //FONTS
@@ -30,3 +37,15 @@ $test: #9f9acf;
     font-weight: 700;
     font-style: normal
   }
+
+  // Font sizes
+@function calcRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+$title-size: calcRem(72px);
+$menu-size: calcRem(48px);
+$big-size: calcRem(36px);
+$small-size: calcRem(24px);
+$small-size-mobile: calcRem(20px);
